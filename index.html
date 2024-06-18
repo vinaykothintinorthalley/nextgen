@@ -121,7 +121,7 @@
                         <h6>Digital Marketing</h6>
                       </div>
                       <div class="card-content">
-                        <p>Digital marketing enables businesses to reach a global audience, breaking geographical barriers and expanding market potential.</p>
+                        <p>Digital marketing enables businesses to reach a global audience, breaking geographical barriers and expanding market potential.Leveraging SEO, PPC, social media, and content marketing.</p>
                         <p>With digital marketing, businesses can target specific demographics, interests, and behaviors, ensuring that marketing efforts reach the most relevant audience.</p>
                       </div>
                       <div class="link-wrap">
@@ -285,21 +285,24 @@
                 <div class="col-lg-6">
                   <div class="contact-form-wrapper rounded-border-wrapper">
                     <div class="contact-form-container rounded-border-content">
-                      <div class="form-field mb-4">
-                        <label class="form-label">Full name</label>
-                        <input class="form-control" type="text" placeholder="Full name" >
-                      </div>
-                      <div class="form-field mb-4">
-                        <label class="form-label">Email</label>
-                        <input class="form-control" type="text" placeholder="you@company.com" >
-                      </div>
-                      <div class="form-field mb-4">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="3" placeholder="Leave us a message"></textarea>
-                      </div>
-                      <div class="btn-wrap">
-                        <button type="button" class="btn btn-primary">Send Message</button>
-                      </div>
+                      <form id="contactForm">
+                        <div class="form-field mb-4">
+                          <label class="form-label">Full name</label>
+                          <input class="form-control" type="text" name="fullName" placeholder="Full name" required>
+                        </div>
+                        <div class="form-field mb-4">
+                          <label class="form-label">Email</label>
+                          <input class="form-control" type="email" name="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="form-field mb-4">
+                          <label class="form-label">Message</label>
+                          <textarea class="form-control" rows="3" name="message" placeholder="Leave us a message" required></textarea>
+                        </div>
+                        <div class="btn-wrap">
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                        <div id="successMessage" class="success-message" style="display:none;">Your message has been sent successfully!</div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -404,9 +407,10 @@
         </div>
         <!-- end of footer info -->
     </div>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/particles.js"></script>
 </body>
