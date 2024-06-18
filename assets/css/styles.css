@@ -140,9 +140,9 @@ font-size: 16px;color: var(--base-white);}
 .banner_info{padding-top: 160px;position: relative;width: 100%;height: calc(100vh - 104px);}
 
 .banner_info_text{position: absolute;z-index: 1;width: auto;left: -40px;top: 50%;border-radius: 24px;
-    transform: translateY(-50%);}
+    transform: translateY(-50%);background: rgba(255,255,255,0.4);padding: 12px 0px;}
 
-.banner_info_text h1{color: var(--base--light-blue);text-align: center;font-size: 72px;;line-height: 90px;letter-spacing: -1.44px;font-weight: 700;
+.banner_info_text h1{color: var(--base-blue);text-align: center;font-size: 72px;;line-height: 90px;letter-spacing: -1.44px;font-weight: 700;
 font-family: var(--font-helvetica);}
 
 .banner_info_text p{width: 740px;position: relative;left: 50%;transform: translateX(-50%);font-size: 20px;font-weight: 500;
